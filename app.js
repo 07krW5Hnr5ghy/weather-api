@@ -23,7 +23,6 @@ app.get('/weather/:city',async(req,res)=>{
     try{
         // check redis cache
         const cachedData = await redis.get(city.toLowerCase());
-        console.log(cachedData);
         if(cachedData){
             return res.json({source:'cache',data:JSON.parse(cachedData)});
         }
