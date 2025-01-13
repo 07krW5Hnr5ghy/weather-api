@@ -45,19 +45,13 @@ A simple Weather API built using Node.js that fetches and returns weather data f
 
 ## Usage
 
-1. Start the Redis server:
-
-   ```bash
-   redis-server
-   ```
-
-2. Start the Node.js server:
+1. Start the Node.js server:
 
    ```bash
    npm start
    ```
 
-3. Make a request to the Weather API:
+2. Make a request to the Weather API:
 
    ```bash
    curl http://localhost:3001/weather/london
